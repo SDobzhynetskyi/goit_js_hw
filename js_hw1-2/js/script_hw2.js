@@ -1,10 +1,11 @@
 
+
 var listUsernames = [];
 
 for (var i = 0; i < 5; i++) {
   listUsernames.push( prompt('Enter your nane:'));
 }
-console.log(listUsernames)
+console.log(listUsernames);
 
 var username = prompt('Username:');
 var check = false;
@@ -16,7 +17,7 @@ for (var i = 0 in listUsernames) {
     }
 }
 if (check !== false) {
-  alert (check + " you are successfully logged in")
+  alert (check + " you are successfully logged in");
 } else {
-  alert ('ERROR')
+  alert ('ERROR');
 }
