@@ -18,33 +18,34 @@ var test = {
           var j = 1;
           while (j <= 3) {
             var optionBox = document.createElement('div');
-              test.page.appendChild(optionBox);
-              list = document.createElement('ul');
-              optionBox.appendChild(list);
-              listItem = document.createElement('li');
-              list.appendChild(listItem);
-              chekeckBox = document.createElement('input');
-              chekeckBox.type = 'checkbox';
-              chekeckBox.id = 'text';
-              listItem.appendChild(chekeckBox);
-              label = document.createElement('label');
-              label.HTMLfor = 'id';
-              label.innerHTML = ' Варіант відповіді №' + j;
-              listItem.appendChild(label);
+                test.page.appendChild(optionBox);
+            var list = document.createElement('ul');
+                optionBox.appendChild(list);
+            var listItem = document.createElement('li');
+                list.appendChild(listItem);
+            var chekeckBox = document.createElement('input');
+                chekeckBox.type = 'checkbox';
+                chekeckBox.id = 'text';
+                listItem.appendChild(chekeckBox);
+            var label = document.createElement('label');
+                label.HTMLfor = 'id';
+                label.innerHTML = ' Варіант відповіді №' + j;
+                listItem.appendChild(label);
               j++;
-          };
-        i++
-    };
+          } // close second while loop
+      i++;
+    } // closse first while loop
   },
 
   submitTest: function () {
     var submit = document.createElement('button');
-    submit.classList.add('click');
-    submit.type = 'button'
-    submit.innerHTML = 'Перевірити мої результати'
-    this.page.appendChild(submit);
+      submit.classList.add('click');
+      submit.type = 'button'
+      submit.innerHTML = 'Перевірити мої результати'
+      this.page.appendChild(submit);
   },
 }; // close object
+
 test.testName();
 test.listQuestion();
 test.submitTest();
