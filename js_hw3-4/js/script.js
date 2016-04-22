@@ -40,8 +40,8 @@ var test = {
   submitTest: function () {
     var submit = document.createElement('button');
       submit.classList.add('click');
-      submit.type = 'button'
-      submit.innerHTML = 'Перевірити мої результати'
+      submit.type = 'button';
+      submit.innerHTML = 'Перевірити мої результати';
       this.page.appendChild(submit);
   },
 }; // close object
