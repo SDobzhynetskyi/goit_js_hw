@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  /*border: 1px solid darkgreen;*/
+  list-style: none;
+}
+
+.page {
+  margin: 0 auto;
+  max-width: 1024px;
+  text-align: center;
+}
+
+.size {
+  float: left;;
+}
+
+.color {
+  float: right;
+}
+header {
+  overflow: hidden;
+}
+
+header li {
+  display: inline-block;
+}
+
+section {
+  clear: both;
+}
