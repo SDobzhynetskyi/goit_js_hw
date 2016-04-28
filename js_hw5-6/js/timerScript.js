@@ -27,5 +27,5 @@ function sec() {
 
 
 
-setInterval(milliSec, 1);
+setInterval(milliSec, 10);
 setInterval(sec, 1000);
