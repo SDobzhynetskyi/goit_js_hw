@@ -1,0 +1,31 @@
+.box_form {
+  margin: 50px auto;
+  width: 600px;
+  border: 1px solid darkgray;
+}
+.box_form > input {
+  margin: 5px;
+  padding: 5px;
+}
+.personData{
+  margin: 5px;
+  border: 1px solid gray;
+  padding: 5px;
+}
+.dataInput, .subject {
+  display: inline-block;
+}
+
+.subject > span {
+  display: block;
+  line-height: 40px;
+}
+.dataInput {
+  line-height: 40px;
+}
+
+.help {
+  border: 1px solid green;
+  border-radius: 3px;
+  box-shadow: 3px 3px 3px;
+}
