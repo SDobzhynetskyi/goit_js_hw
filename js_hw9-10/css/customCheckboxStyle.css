@@ -1,0 +1,30 @@
+input[type=checkbox] {
+	position: absolute;
+	clip: rect(0, 0, 0, 0);
+}
+label {
+	cursor: pointer;
+}
+label.css:after {
+	content: " ";
+	display: inline-block;
+	width: 17px;
+	height: 17px;
+  border: 1px solid darkred;
+  border-radius: 2px;
+	background: linear-gradient(red, lightgray);
+  opacity: 0.6;
+	position: relative;
+	top: 3px;
+	margin-left: 15px;
+}
+input[type=checkbox]:checked + label:after {
+  background: linear-gradient(darkgreen, lightgreen) ;
+}
+label:hover:after {
+  opacity: 1;
+}
+input[type=checkbox]:checked + label:hover:after {
+  background: linear-gradient(green, lightgray);
+  opacity: 0.6;
+}

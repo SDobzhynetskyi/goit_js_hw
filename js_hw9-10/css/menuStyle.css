@@ -1,0 +1,45 @@
+
+.menu {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.menu a {
+  display: block;
+  width: 70px;
+  line-height: 30px;
+  color: black;
+  background-color: lightgray;
+  font-family: Arial, sans-serif;
+  text-decoration: none;
+  border: 1px solid black;
+}
+
+.menu > ul {
+  margin: 0 auto;
+  display: inline-block;
+}
+
+.menu li {
+  float: left;
+}
+
+.show_level_2 {
+  position: relative;
+}
+
+.level_2 {
+  position: absolute;
+  display: none;
+}
+
+.show_level_3 {
+  position: relative;
+}
+
+.level_3 {
+  position: absolute;
+  display: none;
+  top: 0;
+  left: 72px;
+}

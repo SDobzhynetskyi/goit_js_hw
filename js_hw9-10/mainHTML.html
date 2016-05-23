@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" media="all" href="css/customCheckboxStyle.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="css/menuStyle.css" />
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.waterwheelCarousel.js"></script>
+    <script type="text/javascript" src="js/jquery.checkbox.js"></script>
+    <script type="text/javascript" src="js/jquery.color.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+  </head>
+  <body>
+    <div class="page">
+      <div id="carousel">
+        <img src="img/trick_1.jpg" alt="Image 1" />
+        <img src="img/trick_2.jpg" alt="Image 2" />
+        <img src="img/trick_3.jpg" alt="Image 3" />
+        <img src="img/trick_4.jpg" alt="Image 4" />
+        <img src="img/trick_5.jpg" alt="Image 5" />
+        <img src="img/trick_6.jpg" alt="Image 5" />
+        <img src="img/trick_7.jpg" alt="Image 5" />
+        <img src="img/trick_8.jpg" alt="Image 1" />
+        <img src="img/trick_9.jpg" alt="Image 2" />
+        <img src="img/trick_10.jpg" alt="Image 3" />
+      </div>
+      <div id="choice">
+        <select>
+          <option value="car">Car</option>
+          <option value="moto">Motorcicle</option>
+          <option value="bus">Bus</option>
+          <option value="truck">Truck</option>
+          <option value="vun">Vun</option>
+        </select>
+      </div>
+      <div class="checkboxs">
+        <label class="jq" for="ch1">jQueryCheckBox</label>
+        <span class="niceCheck"><input type="checkbox" name="ch1" /></span>
+        <br>
+        <input type="checkbox" id="cssCheck">
+        <label class="css" for="cssCheck">cssCheckBox</label>
+      </div>
+      <div class="menu">
+        <ul class="level_1">
+          <li><a href="#">nav 1</a></li>
+          <li class="show_level_2"><a href="#">nav 1</a>
+            <ul class="level_2">
+              <li><a href="#">nav 2</a></li>
+              <li class="show_level_3"><a href="#">nav 2</a>
+                <ul class="level_3">
+                  <li><a href="#">nav 3</a></li>
+                  <li><a href="#">nav 3</a></li>
+                  <li><a href="#">nav 3</a></li>
+                </ul>
+              </li>
+              <li><a href="#">nav 2</a></li>
+            </ul>
+          </li>
+          <li><a href="#">nav 1</a></li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

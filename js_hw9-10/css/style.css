@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#carousel {
+    margin: 0 auto;
+    width:800px;
+    height: 300px;
+    display: relative;
+    background: linear-gradient(gray, darkred);
+  }
+
+#carousel img {
+    width: 330px;
+    height: 200px;
+    display: hidden; /* hide images until carousel prepares them */
+    cursor: pointer; /* not needed if you wrap carousel items in links */
+  }
+
+#choice {
+  width: 100px;
+  margin: 20px auto;
+}
+
+.checkboxs{
+  text-align: center;
+}
+
+.niceCheck {
+  width: 17px;
+  height: 17px;
+  border: 1px solid black;
+  border-radius: 2px;
+  display: inline-block;
+  cursor: pointer;
+  background-color: red;
+  margin: 0 10px;
+}
+.niceCheck input {
+  display: none;
+}
+.jq {
+  display: inline-block;
+}
