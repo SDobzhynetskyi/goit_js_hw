@@ -1,31 +1,25 @@
-var milliSeconds = document.getElementById('mlseconds');
-var seconds = document.getElementById('seconds');
-var minutes = document.getElementById('minute');
-var houers = document.getElementById('houers');
+var timer = document.getElementById('timer');
+var toggleBtn = document.getElementById('toggle');
+var resetBtn = document.getElementById('reset');
 
-var i = 0;
-function milliSec() {
-  if (i < 10) {
-    milliSeconds.innerHTML = '00' + i;
-  } else if (i < 100) {
-    milliSeconds.innerHTML = '0' + i;
-  } else if (i < 1000){
-    milliSeconds.innerHTML =  i;
-  } else {
-    i = 0;
+var watch = new Stopwatch(timer);
+
+function start() {
+  watch.start();
+  toggleBtn.textContent = 'Stop';
+}
+
+function stop() {
+  watch.stop();
+  toggleBtn.textContent = 'Start';
+}
+
+toggleBtn.addEventListener('click', function() {
+  (watch.isOn) ? stop() : start();
+});
+
+resetBtn.addEventListener('click', function() {
+  if (!watch.isOn) {
+    watch.reset();
   }
-  i++;
-};
-
-var s = 0;
-function sec() {
-  if (s < 10) {
-    seconds.innerHTML = '0' + s;
-  }
-  s++;
-};
-
-
-
-setInterval(milliSec, 1);
-setInterval(sec, 1000);
+});

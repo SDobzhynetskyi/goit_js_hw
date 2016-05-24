@@ -1,31 +1,19 @@
-* {
-  margin: 0;
-  padding: 0;
-  /*border: 1px solid darkgreen;*/
-  list-style: none;
-}
-
-.page {
-  margin: 0 auto;
-  max-width: 1024px;
+body {
   text-align: center;
+  margin-top: 200px;
 }
 
-.size {
-  float: left;;
+#timer {
+  font-family: 'Lato';
+  font-size: 100px;
+  font-weight: 300;
 }
 
-.color {
-  float: right;
-}
-header {
-  overflow: hidden;
+button {
+  width: 100px;
+  height: 35px;
 }
 
-header li {
-  display: inline-block;
-}
-
-section {
-  clear: both;
+button:hover {
+  cursor: pointer;
 }
