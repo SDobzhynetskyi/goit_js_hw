@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+    /*carousel style*/
+.carousel_plugin {
+    margin: 10px auto;
+    background: linear-gradient(gray, lightgray);
+    border-radius: 2px;
+    text-align: center;
+}
+
+.carousel-list {
+    list-style: none;
+    width: 10000px;
+    padding: 0px;
+    position: relative;
+
+}
+
+.carousel-element {
+    display: block;
+    margin-right: 25px;
+    float: left;
+}
+
+.carousel-element img {
+    max-width: 100px;
+    margin-top: 10px;
+}
+.carousel-hider {
+    position: relative;
+    background: linear-gradient(gray, orange);
+    width: 600px;
+    overflow: hidden;
+    display: inline-block;
+    margin: 10px auto;
+    padding: 0 25px 0 25px;
+}
+.carousel-arrow-left, .carousel-arrow-right {
+    display: inline-block;
+    border: 1px solid grey;
+    background-color: lightgrey;
+    padding: 5px;
+}
+
+.carousel-arrow-left:hover, .carousel-arrow-right:hover {
+    cursor: pointer;
+    background-color: grey;
+}
+
+.carousel-arrow-left {
+    margin-right: 25px;
+}
+
+.carousel-arrow-right {
+    margin-left: 25px;
+}
+
+    /*tmpl style*/
+.template_create_box {
+
+  position: relative;
+  width: 400px;
+  margin: 50px auto;
+  border: 1px solid green;
+  border-radius: 2px;
+  box-shadow: 3px 3px 3px 3px darkgreen;
+  text-align: center;
+}
+
+.photo {
+  display: inline-block;
+  margin: 3px auto;
+}
+
+figure {
+  border: 1px solid green;
+  box-shadow: 2px 2px 2px 2px green;
+  padding: 5px;
+
+}
+figcapture {
+  display: block;
+  padding: 5px;
+}
+
+.contacts, .skills {
+  border: 1px solid green;
+  display: inline-block;
+  padding: 3px;
+  margin: 10px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+
+.contacts li, .skills{
+  line-height: 20px;
+}
+.skills h4 {
+  text-transform: capitalize;
+}
+
+.skills span {
+  margin-left: 5px;
+}
