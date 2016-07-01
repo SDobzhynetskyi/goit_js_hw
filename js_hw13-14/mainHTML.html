@@ -4,33 +4,39 @@
     <meta charset="utf-8">
     <title>js_hw13-14</title>
     <link rel="stylesheet" href="css/style.css" media="screen" title="no title" charset="utf-8">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.3.0/lodash.js"></script>
   </head>
   <body>
     <script type="text/template" id="testCreating">
-      <div class="testName"><h3><%= testName %></h3></div>
-      <div class="testBox">
-        <form action="#" method="post">
-          <% for ( var i in test ) { %>
-          <h4><%= test[i].question %></h4>
-            <div class="answerOptions">
-              <% for ( var j in test[i].answers) { %>
-                <input type="checkbox" class="<%= i %>"  id='<%- test[i].answers[j] %>'/>
-                <lebel for="<%- test[i].answers[j] %>"><%= test[i].answers[j] %></lebel>
-            <% }; %></div>
-        <% }; %></div>
-        <input type="submit" name="check" value="Submit test">
-      </form>
+      <div class="wrapper">
+          <div class="testName"><h3><%= testName %></h3></div>
+          <div class="testBox">
+            <!-- <form action="#" method="post"> -->
+              <% for ( var i in test ) { %>
+                <% if ( typeof(test[i]) == "object") { %>
+                <div id="<%= i %>" class="questionBlock"><h4><%= test[i].question %></h4>
+                  <% for ( var j in test[i].answers) { %>
+                    <div class="answerOptions">
+                      <input type="checkbox" class="<%= i %>"  id='<%- test[i].answers[j] %>'/>
+                      <label for="<%- test[i].answers[j] %>"><%= test[i].answers[j] %></label>
+                    </div>
+                <% }; %></div>
+                <% }; %>
+              <% }; %>
+              <input class="submit" type="button" name="button" value="Submit test">
+          <!-- </form> -->
+        </div>
+          <div class="modal">
+            <div class="modal__content">
+                <span class="modal__header">Result of '<%= testName %>' testing:</span>
+                <span class="modal__result">-</span>
+                <div class="result">
+                    <input type="button" class="modal__button" value="OK!">
+                </div>
+            </div>
+          </div>
     </script>
-    <div class="input_lebel">
-      <input type="checkbox" id="Arsenal">
-      <label for="Arsenal">Arsenal</label>
-    </div>
-    <div class="input_inside_lebel">
-      <label><input type="checkbox" id="Uventus">Uventus</label>
-    </div>
-
-    <script src="js/script.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
   </body>
 </html>
