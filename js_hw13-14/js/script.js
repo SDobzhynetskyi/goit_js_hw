@@ -105,4 +105,11 @@ $(function () {
       defaultVal(testReady);
   });
 
+  $(document).on('keyup',function(evt) {
+      if (evt.keyCode == 27) {
+          modalBut();
+          defaultVal(testReady);
+      };
+  }); // event on esc button
+
 });

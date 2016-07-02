@@ -81,7 +81,8 @@
 }
 .modal__content {
   width: 70%;
-  margin: 0 auto;
+  margin: 20% auto;
+  top:
   display: block;
   border: 1px solid green;
   border-radius: 3px;
