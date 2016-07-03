@@ -3,7 +3,7 @@
 var test = {
   testName : "Football knowlege",
   testCase_1: {
-    question: "Who won the England Premier Ligue in season 2015/2016",
+    question: "Who won the England Premier League in season 2015/2016",
     answers: ["Chelsey", "Arsenal", "Leicester", "Manchester United"],
     correct: "Leicester",
     givenAnswer: "",
@@ -15,7 +15,7 @@ var test = {
     givenAnswer: "",
   },
   testCase_3: {
-    question: "How many substitutoins has each team in official games",
+    question: "How many substitutions has each team in official games",
     answers: ["one", "whatever", "five", "three"],
     correct: "three",
     givenAnswer: "",
