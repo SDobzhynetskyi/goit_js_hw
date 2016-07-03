@@ -1,7 +1,7 @@
 ;"use strict";
 
 var test = {
-  testName : "Football knowlege",
+  testName : "Football questions!",
   testCase_1: {
     question: "Who won the England Premier League in season 2015/2016",
     answers: ["Chelsey", "Arsenal", "Leicester", "Manchester United"],
