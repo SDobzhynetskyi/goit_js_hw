@@ -1,0 +1,26 @@
+nav {
+  overflow: auto;
+}
+li {
+  display: block;
+  float: left;
+  text-align: center;
+  width: 20%;
+  border-bottom: 2px solid blue;
+}
+
+a {
+  display: block;
+  background-color: lightblue;
+  text-decoration: none;
+  font: 20px Arial;
+  color: red;
+  box-sizing: border-box;
+  line-height: 40px;
+  margin: 2px 1px;
+}
+
+a:hover {
+  background-color: darkblue;
+  color: blue;
+}

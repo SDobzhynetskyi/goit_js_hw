@@ -1,0 +1,12 @@
+main {
+  clear: both;
+  margin: 10px 0;
+  border-top: 2px solid blue;
+  border-bottom: 2px solid blue;
+}
+
+iframe {
+  display: block;
+  border-style: none;
+  height: 380px;
+}

@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+
+
+header {
+  border-bottom: 2px solid blue;
+  position: relative;
+}
+
+figure {
+  margin: 10px 40px;
+  display: inline-block;
+  position: relative;
+}
+
+figcaption {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  font: 25px Arial;
+  color: blue;
+}
+
+.contacts {
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+}
+
+span {
+  display: block;
+  font: 25px Arial;
+  color: blue;
+  text-transform: capitalize;
+}
+
+span::first-letter {
+  color: red;
+}
