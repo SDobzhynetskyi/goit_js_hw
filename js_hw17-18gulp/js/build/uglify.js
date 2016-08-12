@@ -1,0 +1,1 @@
+for(var choosenLink=document.getElementsByTagName("a"),i=0;i<choosenLink.length;i++)choosenLink[i].addEventListener("click",function(e){e.preventDefault();var n=this.getAttribute("href"),i=document.querySelector("iframe");i.src=n});for(var i=0;i<choosenLink.length;i++)console.log(choosenLink[i].innerHTML);
